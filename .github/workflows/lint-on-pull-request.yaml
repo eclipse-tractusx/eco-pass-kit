@@ -1,0 +1,26 @@
+name: Markdown Linter
+
+# Run Linter only on PRs which are to be merge into the main branch
+on:
+  pull_request:
+    branches:
+      - main
+
+# linting job
+jobs:
+  lint:
+    name: Run markdown lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run markdown lint
+        run: npm run lint-doc
