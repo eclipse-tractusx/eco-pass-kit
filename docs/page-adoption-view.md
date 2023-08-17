@@ -2,12 +2,31 @@
 title: Adoption View
 ---
 
+<!--
+  Copyright (c) 2021,2023 Contributors to the Eclipse Foundation
+
+  See the NOTICE file(s) distributed with this work for additional
+  information regarding copyright ownership.
+
+  This program and the accompanying materials are made available under the
+  terms of the Apache License, Version 2.0 which is available at
+  https://www.apache.org/licenses/LICENSE-2.0.
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+  License for the specific language governing permissions and limitations
+  under the License.
+
+  SPDX-License-Identifier: Apache-2.0
+ -->
+
 ## Introduction
 
 The EcoPass KIT will be the key enabler for various stakeholders to use digital product passports, which represent a digital collection of specific information about a physical product in a standardized exchange format. This data is governed by agreed-upon ownership and access rights, which are conveyed through the Eclipse Data Space Connector (EDC). The primary purpose of the product pass is to enable the electronic registration, processing and sharing of product-related details among various entities in the supply chain, including several businesses and authorities. The demand for interoperable product passports exists worldwide, driven by the need to establish sustainable and transparent supply chains across different types of products, for which the adoption of standards will become crucial.
 In this context, Catena-X offers a decentralized ecosystem supported by standards and principles like data sovereignty, which can effectively implement such a product passport system. The objective of the EcoPass KIT is therefore to:
 
-- Provide a comprehensive overview about the business context and benefits of product passports.
+- Provide a comprehensive overview of the business context and benefits of product passports.
 - Offer guidelines for industry stakeholders.
 - Provide a detailed description and offer tools to implement product passports.
 
@@ -117,7 +136,7 @@ In its first version the KIT entails the data models Battery Pass and Transmissi
 
 ### Battery Pass
 
-#### Introduction
+#### Battery Pass Introduction
 
 The Catena-X standards, which are crucial to create a more sustainable battery business, serve as the foundation for the data model behind the Battery Pass. The Battery Pass assists in enhancing the traceability and sustainability of batteries by offering a thorough record of a battery's life cycle. This will mitigate the battery industry's environmental effect and make it easier to recycle batteries.
 Accordingly, the Battery Pass establishes the fundamental framework for digital infrastructures aimed at documenting and facilitating the exchange of essential information and update-relevant technical data. Specifically, it focuses on data that provides a comprehensive account of supply chain responsibility, e.g. the carbon footprint, working conditions during raw material extraction and the assessment of battery conditions. It is structured according to the following categories:
@@ -182,7 +201,7 @@ The semantic models are located [here](https://github.com/eclipse-tractusx/sldt-
 
 ### Transmission Pass
 
-#### Introduction
+#### Transmission Pass Introduction
 
 In addition to the Battery Pass, numerous other components will require digital product passports. One example is the vehicle transmission, for which a standardized passport already exists. The Transmission Passport serves as tool for advancing a sustainable and circular transmission value chain.
 To enable stakeholders to access relevant data, the passport leverages Catena-X shared services, a standardized data model, and an application. The initial version of the Transmission Passport model includes the following information:
@@ -248,10 +267,18 @@ The semantic models are located [here](https://github.com/eclipse-tractusx/sldt-
 
 The Business Architecture illustrates the interaction between the EcoPass KIT and other KITs, components, data models, and artifacts used for identity and access management, illustrated by the Figure below.
 
-![](/docs/resources/adoption-view/adoption-view-EcoPassKITBusinessArch.svg)
+![Image: Business Architecture](/docs/resources/adoption-view/adoption-view-EcoPassKITBusinessArch.svg)
 
 The core of the network is to provide interoperability between different applications. For this reason, a common semantic is indispensable. In the Catena-X ecosystem, it has been agreed to use the description language SAMM to describe data models.
 To additionally provide a standardized interface, the open standard of the International Digital Twin Association (IDTA) is used, abbreviated as IDTA. This standard corresponds to the Asset Administration Shell (AAS).
 It is used to discover digital twins and exchange actual usage data.
 To control access to both usage and meta data, the EcoPass KIT relies on the [Connector KIT](https://eclipse-tractusx.github.io/docs-kits/kits/tractusx-edc/docs/kit/adoption-view/Adoption%20View/). Interactions between two parties occur exclusively peer-to-peer via the standardized interfaces of the Connector KIT, based on the International Data Space Protocol.
 Data sovereignty is enabled by so-called verifiable credentials. These rely on the technology of Self-Sovereign Identity (SSI) and are enabled through the Connector KIT. In short, consumers must present their signed credentials, defined by a data provider, before a data contract (and thus a data exchange) can take place. It should be mentioned that this concept is still in the prototype phase as of Release 3.2 and will be expanded in future releases.
+
+## NOTICE
+
+This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
+
+- SPDX-License-Identifier: CC-BY-4.0
+- SPDX-FileCopyrightText: 202x,202y <MyCompany>
+- Source URL: https://github.com/eclipse-tractusx/eco-pass-kit
