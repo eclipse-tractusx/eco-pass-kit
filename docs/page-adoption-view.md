@@ -85,7 +85,7 @@ Stakeholders along the value chain, as well as solution providers can reap the b
 
 In the automotive industry, a Battery Pass or digital product passport for batteries plays a crucial role in ensuring transparency, traceability, and sustainability in the battery supply chain. Here's a real-world example of how a digital product pass might be set up for a battery used in electric vehicles (EVs), including its benefits, illustrated below:
 
-![BP realWorldExample](/docs/resources/adoption-view/adoption-view-BatteryPass_a_example.svg)
+![BP realWorldExample](/docs/resources/adoption-view/adoption-view-BatteryPass_a_example.png)
 
 1. **Battery Manufacturing**: During the production stage, the battery manufacturer collects and records relevant data, such as the battery's unique identifier, type and model, manufacturing date and location, energy capacity and raw materials composition, including the content of critical elements like lithium, cobalt and nickel.
 2. **Supply Chain Transparency**: Information about the battery's sourcing, manufacturing and distribution processes is documented, ensuring compliance with environmental and social standards. This includes data on the origin of raw materials, labor practices and the environmental footprint of each stage of the supply chain.
@@ -248,7 +248,7 @@ The semantic models are located [here](https://github.com/eclipse-tractusx/sldt-
 
 The Business Architecture illustrates the interaction between the EcoPass KIT and other KITs, components, data models, and artifacts used for identity and access management, illustrated by the Figure below.
 
-![Image: Business Architecture](/docs/resources/adoption-view/adoption-view-EcoPassKITBusinessArch.svg)
+![Image: Business Architecture](/docs/resources/adoption-view/adoption-view-EcoPassKITBusinessArch.png)
 
 The core of the network is to provide interoperability between different applications. For this reason, a common semantic is indispensable. In the Catena-X ecosystem, it has been agreed to use the description language SAMM to describe data models.
 To additionally provide a standardized interface, the open standard of the International Digital Twin Association (IDTA) is used, abbreviated as IDTA. This standard corresponds to the Asset Administration Shell (AAS).
