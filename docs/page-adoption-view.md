@@ -28,7 +28,7 @@ All described specifications in the KIT are based on [Catena-X standards](https:
 Following this mission, the EcoPass KIT serves as an instrumental tool promoting sustainable and circular value chains. The improved transparency, traceability and accountability offered with digital product passports will facilitate informed decision-making for various stakeholders. This will bring ethical sourcing, efficient use of resources and reduction of environmental impacts to a new level. By making use of the Catena-X standards defined within the EcoPass KIT, product passports will ensure interoperability for stakeholders and systems to communicate seamlessly. This standardized language is crucial to improve efficiency, lower operational costs and create faster data processing. It ensures a consistent approach to data collection, storage and visualization to enhance the accuracy, reliability and comparability of information.
 The following section will highlight the five major advantages of the Catena-X EcoPass KIT, which are also displayed below.
 
-![AdoptionView Business Value](/docs/resources/adoption-view/adoption-view-BusinessValue.svg)
+![AdoptionView Business Value](/docs/resources/adoption-view/adoption-view-BusinessValue.png)
 
 **Seamless Integration and Collaboration**: By leveraging the EcoPass KIT, service providers can easily integrate with the Catena-X marketplace, promoting efficient collaboration and exchange of information with other businesses in the network. The unified data model and API specification simplifies the process, reducing the time and resources needed for integration and fostering interoperability between various players.
 
