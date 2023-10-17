@@ -1,6 +1,6 @@
 product: "ECO Pass KIT"
 leadingRepository: "https://github.com/eclipse-tractusx/eco-pass-kit"
 repositories: 
-    - name: "ECO Pass KIT"
-        usage: "The EcoPass KIT is the key enabler for various stakeholders to use digital product passports"
-        url: "https://github.com/eclipse-tractusx/eco-pass-kit"
+    - name: "Digital Product Pass"
+      usage: "reference implementation"
+      url: "https://github.com/eclipse-tractusx/digital-product-pass"
