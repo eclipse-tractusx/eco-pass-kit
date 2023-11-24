@@ -2,5 +2,5 @@ product: "ECO Pass KIT"
 leadingRepository: "https://github.com/eclipse-tractusx/eco-pass-kit"
 repositories: 
     - name: "Digital Product Pass"
-        usage: "reference implementation"
-        url: "https://github.com/eclipse-tractusx/digital-product-pass"
+      usage: "reference implementation"
+      url: "https://github.com/eclipse-tractusx/digital-product-pass"
