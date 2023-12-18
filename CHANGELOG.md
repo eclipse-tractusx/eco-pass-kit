@@ -5,6 +5,7 @@
 
 ## Updated
 - Updated technical software development context diagram
+- Updated business architecture diagram
 
 
 ## [released]
