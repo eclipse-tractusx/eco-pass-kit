@@ -1,7 +1,20 @@
----
-title: ECO-Pass KIT Changelog
----
+# Changelog
 
+## [released]
+## [1.0.0] - 2023-12-15
+
+### Added
+- Initial Version from the KIT
+- Added Diagrams and Licenses
+- Setup the structure to pass quality gates with the KIT
+- Created PR structure template for future PRs
+- Setup proper changelog structure and also repo open source organization
+
+### Updated
+- Fix metadata from the .tractusx file 
+- Outdated diagrams eliminated
+
+## [unreleased]
 ## [0.0.3] - 2023-08-11
 
 ### Added
