@@ -30,7 +30,7 @@ SPDX-License-Identifier: Apache-2.0
 ################################################################################## 
 -->
 
-![DPP Kit Pictotogram](./resources/img/DDPKIT_pictogram.png)
+![Eco Pass KIT Pictotogram](./resources/img/EcoPassKIT_pictogram.png)
 
 # Eco Pass KIT
 
