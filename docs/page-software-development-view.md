@@ -11,14 +11,36 @@ Thereby, this KIT covers various aspects, starting from how the available API En
 
 ### Architecture Overview
 
-The following Figure 7 shows how the EcoPass KIT (represented by Product Passport Frontend and Backend) is embedded in the overall architecture.
+The following Figure shows how the EcoPass KIT (represented by Digital Product Passport Frontend and Backend) is embedded in the overall architecture.
 
 ![EcoPassKIT IT Arch Picture](./resources/development-view/adoption-view-EcoPassKIT_IT_Arch.png)
 
-After authorization, the sequence diagram below (Figure 8) illustrates the identification process of the decentral Digital Twin Registry. The process is divided into 25 steps, starting within the Data Consumer Environment, which is providing the digital product passport consumer application/service. In summary, the sequence details the interaction of EDC(s), corresponding BPN(s), and the decentral Digital Twin Registry (dDTR). It also illustrates how the consumer not only requests data via the EDC(s), but also how the data is exchanged via the provider, thereby leveraging the EDC component at all stages. The sequence is concluded by data requests for digital twins and corresponding sub models.
 
-The Figure below describes the process of searching for a DPP based on a part identification. The process shown in the figure assumes that the following conditions are met. The consumer has a part identifier and wants to obtain the corresponding digital twin. It also assumes that the consumer knows the BPN of the data room participant that is the owner of the digital twin.  
-This process can be roughly divided into three steps. In the first step, [001] to [006], the EDCs of the data provider are identified. Then, the consumer has received a list of EDC endpoints, all belonging to the data space participant that can provide the requested digital twin. In the second step, calls [007] to [011], the consumer determines which specific DTR asset to query to obtain the correct DPP. This is accomplished by traversing the received list of EDC endpoints until the DTR asset that can provide the DPP being sought is found. Once the DTR facility is located, the contract negotiation workflow is initiated by the consumer. During this workflow, it is determined if the consumer has the necessary rights to access and receive the DPP they are looking for. The rights are dependend on the frame contracts the consumer aggreed to. On top the provider can white or blacklist ceratain BPNs which ensures that the provider has full controll of their data. At this point, the consumer knows where to find the DPP, and a usage and access policy is negotiated. In the last step, calls [012] to [023], the actual retrieval of the DPP is performed. In order to retrieve the DPP, its unique identifier (UUID) is required. This UUID is determined by retrieving the DPP that is associated with the part ID. After retrieving the UUID, the consumer requests the asset.
+## Data Retrieval Flow
+
+Here is a diagram of the data retrial flow necessary to retrieve any data from the Catena-X Network without any optimizations:
+
+![Data Retrieval Flow](./resources/development-view/dataRetrievalFlow.jpg)
+
+
+### 1. Discovery Phase
+
+At the beginning we start calling the `Discovery Service` which is responsible for giving us the urls from the `BPN Discovery` and the `EDC Discovery` this two service give us first a `BPN or Business Partner Number` for a specific `id` and the `EDC Discovery` will give you a list of EDC registered by one company's `BPN`.
+
+### 2. Digital Twin Registry Search Phase
+
+Once we have a list of `EDCs` we need to find which of this EDCs contain the `Digital Twin Registry` component. We can filter which `EDCs` contain the `Digital Twin Registry` by simply calling for the catalog with the `type` condition of the contract that must have the `data.core.digitalTwinRegistry` standardized type. 
+
+Once we have the list of DTRs we need to negotiate each contract retrieve in the catalog so that we can have the `Contract Agreement Id` which is given by the EDC once the contact is signed and agreed. This id will be used later to request the transfer for the `EDR` token for accessing the `Digital Twin Registry` through the `EDC Provider Data Plane Proxy`. 
+
+### 3. Digital Twin Search Phase
+
+We need to search for the `Digital Twins` inside of the `Digital Twin Registries`, and once we found it we can start the negotiation for the `submodelDescriptor` we are searching for that can be for example a: `Digital Product Pass`, `Battery Pass`, `Single Level BOM as Built` or a `Transmission Pass`.
+
+### 4. Data Negotiation and Transfer Phase
+
+Once we have the submodel we are going to call the [`subprotocolBody`](#L233) url of the `endpoint interface` with name `SUBMODEL-3.0`. This will provide for us the asset id to negotiate with the EDC Provider. Once this asset is negotiated we will request for the `transfer` and `EDR` token will be sent to the backend by the EDC Provider, allowing us to query the dataplane url contained in the `href` field of the endpoint interface. And in this way we will retrieve the data using the `EDC Provider Data Plane Proxy`.
+
 
 ![Sequence Diagramm](./resources/development-view/developmentview-sequence-diagramm.svg)
 
