@@ -244,6 +244,498 @@ The semantic models are located [here](https://github.com/eclipse-tractusx/sldt-
 }
 ```
 
+### Digital Product Pass
+
+#### Digital Product Pass Introduction
+
+The Digital Product Passport establishes a set of data requirements for different product groups. The parameters will contribute to a more transparent and circular economy within the European Union. The detailed description is given in the Ecodesign for Sustainable Products Regulation Proposal ([ESPR](https://environment.ec.europa.eu/publications/proposal-ecodesign-sustainable-products-regulation_en)). From these regulations, content clusters for circularity were identified, and concrete circularity parameters for the Product Passport derived. The data sets also contain information, which are relevant for closed and open loop business models. It is important to note that the data model contains information / data fields, which are optional and mandatory for regulation fulfillment. It is also worth mentioning that sharing information within the network is based on decentralized technologies and is always based on the individual decision by each provider.
+
+The Digital Product Passport is the core model and can be used as the root class for other, specific, product models. The Passport itself is defined by the usage of Catena-X shared services, a standardized data model and an application which will enable stakeholders to access the relevant data. The first version of the Product Passport model consists out of the following information:
+
+- Passport Metadata
+- Product Identification
+- Product Typology
+- Product Characteristics
+- Sustainability Information
+- Commercial Information
+- Operational Information
+- Sources
+- Additional Data (An generic node structure that allow the representation of non-standardized data)
+
+This data model is based on the new proposed Ecodesign Regulation ([ESPR-2022](https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/sustainable-products/ecodesign-sustainable-products_en)) from March 30th, 2022 and is continuously adapted to the basic conditions over time. Amendments to this regulation came from the Council of the European Union ([Council Amendment](https://data.consilium.europa.eu/doc/document/ST-9014-2023-INIT/en/pdf)) from May 15th, 2023 and the European Parliament ([Parliament Amendment](https://www.europarl.europa.eu/doceo/document/TA-9-2023-0272_EN.html)) from July 12th, 2023 and is shown at specific points in the model. However, the main basis remains the version from the Committee.
+
+#### Link to current model
+
+The semantic models are located [here](https://github.com/eclipse-tractusx/sldt-semantic-models/blob/main/io.catenax.generic.digital_product_passport/). For each version there is a separated directory containing the ttl-file and a generated samples. The latest version available is the `v3.0.0` which sets the bases of all the other abstractactions of the Digitial Product Pass at the moment like the `Battery Pass v4.0.0` that imports several aspects from the DPP Aspect.
+
+
+#### Example Payload
+```json
+{
+  "typology": {
+    "shortName": "8HP60",
+    "class": {
+      "definition": "Manual transmission (motor vehicle)",
+      "code": "44-09-02-02"
+    },
+    "longName": "Product Description long text"
+  },
+  "metadata": {
+    "economicOperator": {
+      "economicOperatorId": {
+        "left": {
+          "contactProperty": {
+            "faxNumber": "+49 89 0987654321",
+            "website": "https://www.samsung.com",
+            "phoneNumber": "+49 89 1234567890",
+            "email": "test.mail@example.com"
+          },
+          "companyName": [
+            "eOMtThyhVNLWUZNRcBaQKxI"
+          ],
+          "address": {
+            "locality": {
+              "value": "Mannheim",
+              "technicalKey": "BLOCK"
+            },
+            "country": {
+              "shortName": ""
+            },
+            "postCode": {
+              "value": "98765-4321",
+              "technicalKey": "CEDEX"
+            },
+            "thoroughfare": {
+              "value": "Bernstrasse",
+              "number": "45",
+              "technicalKey": "STREET"
+            },
+            "premise": {
+              "value": "Werk 1",
+              "technicalKey": "BUILDING"
+            },
+            "postalDeliveryPoint": {
+              "value": "Tor 1",
+              "technicalKey": "INTERURBAN_DELIVERY_POINT"
+            }
+          }
+        }
+      }
+    },
+    "predecessor": {
+      "left": "Cc7A36F0-fF6C-44f6-dA85-b13FAeFea068"
+    },
+    "issueDate": "2000-01-01",
+    "version": "1.0.0",
+    "passportIdentifier": {
+      "left": "urn:uuid:7e7839c6-5EB6-f770-Cec0-Ba0AD7a7DdFa"
+    },
+    "status": "draft",
+    "expirationDate": "2000-01-01"
+  },
+  "characteristics": {
+    "physicalDimension": {
+      "grossWeight": {
+        "value": 20.5,
+        "unit": "unit:gram"
+      },
+      "weightOrVolume": {
+        "left": {
+          "value": 20.5,
+          "unit": "unit:cubicMetre"
+        }
+      },
+      "diameter": {
+        "value": 20.5,
+        "unit": "unit:millimetre"
+      },
+      "grossVolume": {
+        "value": 20.5,
+        "unit": "unit:cubicMetre"
+      },
+      "width": {
+        "value": 20.5,
+        "unit": "unit:millimetre"
+      },
+      "length": {
+        "value": 20.5,
+        "unit": "unit:millimetre"
+      },
+      "height": {
+        "value": 20.5,
+        "unit": "unit:millimetre"
+      }
+    },
+    "lifespan": [
+      {
+        "value": 36,
+        "unit": "unit:day",
+        "key": "guaranteed lifetime"
+      }
+    ],
+    "physicalState": "solid"
+  },
+  "commercial": {
+    "placedOnMarket": "2000-01-01"
+  },
+  "identification": {
+    "localIdentifier": [
+      {
+        "value": "SN12345678",
+        "key": "PartInstanceId"
+      }
+    ],
+    "additionalCode": [
+      {
+        "value": "8703 24 10 00",
+        "key": "TARIC"
+      }
+    ],
+    "dataCarrier": {
+      "carrierType": "QR",
+      "carrierLayout": "upper-left side"
+    }
+  },
+  "sources": [
+    {
+      "header": "Sustainability Document Material XY",
+      "category": "Product Specifications",
+      "type": "URL",
+      "content": "www.alink.pdf"
+    }
+  ],
+  "handling": {
+    "spareParts": {
+      "left": {
+        "producer": [
+          {
+            "id": {
+              "left": {
+                "contactProperty": {
+                  "faxNumber": "+49 89 0987654321",
+                  "website": "https://www.samsung.com",
+                  "phoneNumber": "+49 89 1234567890",
+                  "email": "test.mail@example.com"
+                },
+                "companyName": [
+                  "VLhpfQGTMDYpsBZxvfBoeygjb"
+                ],
+                "address": {
+                  "locality": {
+                    "value": "Mannheim",
+                    "technicalKey": "BLOCK"
+                  },
+                  "country": {
+                    "shortName": ""
+                  },
+                  "postCode": {
+                    "value": "98765-4321",
+                    "technicalKey": "CEDEX"
+                  },
+                  "thoroughfare": {
+                    "value": "Bernstrasse",
+                    "number": "45",
+                    "technicalKey": "STREET"
+                  },
+                  "premise": {
+                    "value": "Werk 1",
+                    "technicalKey": "BUILDING"
+                  },
+                  "postalDeliveryPoint": {
+                    "value": "Tor 1",
+                    "technicalKey": "INTERURBAN_DELIVERY_POINT"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "sparePart": [
+          {
+            "partNumber": "12345678",
+            "partName": "Aluminum Housing"
+          }
+        ]
+      }
+    },
+    "substanceOfConcern": {
+      "left": [
+        {
+          "unit": "unit:partPerMillion",
+          "name": {
+            "chemicalName": "phenolphthalein",
+            "type": "IUPAC"
+          },
+          "location": "Housing",
+          "concentration": {
+            "left": [
+              {
+                "max": 2.6,
+                "min": 2.1
+              }
+            ]
+          },
+          "exemption": "shall not apply to product x containing not more than 1,5 ml of liquid",
+          "id": [
+            {
+              "materialid": "201-004-7",
+              "type": "CAS"
+            }
+          ],
+          "hazardClass": "Acute toxicity"
+        }
+      ]
+    }
+  },
+  "additionalData": [
+    {
+      "description": "Description of an attribute",
+      "label": "Maximum permitted battery power",
+      "type": {
+        "typeUnit": "unit:volume",
+        "dataType": "array"
+      },
+      "data": "23",
+      "children": [
+        {
+          "description": "Description of an attribute",
+          "label": "Maximum permitted battery power",
+          "type": {
+            "typeUnit": "unit:volume",
+            "dataType": "array"
+          },
+          "data": "23"
+        }
+      ]
+    }
+  ],
+  "sustainability": {
+    "PEF": {
+      "carbon": [
+        {
+          "lifecycle": "main product production",
+          "rulebook": "https://www.alink.pdf/",
+          "unit": "kg CO2 eq",
+          "performanceClass": "A",
+          "manufacturingPlant": {
+            "left": {
+              "locality": {
+                "value": "Mannheim",
+                "technicalKey": "BLOCK"
+              },
+              "country": {
+                "shortName": ""
+              },
+              "postCode": {
+                "value": "98765-4321",
+                "technicalKey": "CEDEX"
+              },
+              "thoroughfare": {
+                "value": "Bernstrasse",
+                "number": "45",
+                "technicalKey": "STREET"
+              },
+              "premise": {
+                "value": "Werk 1",
+                "technicalKey": "BUILDING"
+              },
+              "postalDeliveryPoint": {
+                "value": "Tor 1",
+                "technicalKey": "INTERURBAN_DELIVERY_POINT"
+              }
+            }
+          },
+          "type": "Climate Change Total",
+          "value": 12.678,
+          "declaration": "www.alink.de"
+        }
+      ],
+      "environmental": [
+        {
+          "lifecycle": "main product production",
+          "rulebook": "https://www.alink.pdf/",
+          "unit": "kg CO2 eq",
+          "performanceClass": "A",
+          "manufacturingPlant": {
+            "left": {
+              "locality": {
+                "value": "Mannheim",
+                "technicalKey": "BLOCK"
+              },
+              "country": {
+                "shortName": ""
+              },
+              "postCode": {
+                "value": "98765-4321",
+                "technicalKey": "CEDEX"
+              },
+              "thoroughfare": {
+                "value": "Bernstrasse",
+                "number": "45",
+                "technicalKey": "STREET"
+              },
+              "premise": {
+                "value": "Werk 1",
+                "technicalKey": "BUILDING"
+              },
+              "postalDeliveryPoint": {
+                "value": "Tor 1",
+                "technicalKey": "INTERURBAN_DELIVERY_POINT"
+              }
+            }
+          },
+          "type": "Climate Change Total",
+          "value": 12.678,
+          "declaration": "www.alink.de"
+        }
+      ]
+    },
+    "critical": {
+      "left": [
+        "yedUsFwdkelQbxeTeQOvaScfqIOOmaa"
+      ]
+    },
+    "chemicalMaterial": {
+      "left": [
+        {
+          "name": {
+            "chemicalName": "phenolphthalein",
+            "type": "IUPAC"
+          },
+          "unit": "unit:partPerMillion",
+          "recycled": 12.5,
+          "id": [
+            {
+              "materialid": "201-004-7",
+              "type": "CAS"
+            }
+          ],
+          "value": 5,
+          "renewable": 23.5
+        }
+      ]
+    },
+    "status": "original"
+  },
+  "operation": {
+    "importer": {
+      "left": {
+        "eori": "GB123456789000",
+        "id": {
+          "left": {
+            "contactProperty": {
+              "faxNumber": "+49 89 0987654321",
+              "website": "https://www.samsung.com",
+              "phoneNumber": "+49 89 1234567890",
+              "email": "test.mail@example.com"
+            },
+            "companyName": [
+              "JxkyvRnL"
+            ],
+            "address": {
+              "locality": {
+                "value": "Mannheim",
+                "technicalKey": "BLOCK"
+              },
+              "country": {
+                "shortName": ""
+              },
+              "postCode": {
+                "value": "98765-4321",
+                "technicalKey": "CEDEX"
+              },
+              "thoroughfare": {
+                "value": "Bernstrasse",
+                "number": "45",
+                "technicalKey": "STREET"
+              },
+              "premise": {
+                "value": "Werk 1",
+                "technicalKey": "BUILDING"
+              },
+              "postalDeliveryPoint": {
+                "value": "Tor 1",
+                "technicalKey": "INTERURBAN_DELIVERY_POINT"
+              }
+            }
+          }
+        }
+      }
+    },
+    "manufacturer": {
+      "facility": {
+        "left": {
+          "locality": {
+            "value": "Mannheim",
+            "technicalKey": "BLOCK"
+          },
+          "country": {
+            "shortName": "RQ-AJ"
+          },
+          "postCode": {
+            "value": "98765-4321",
+            "technicalKey": "CEDEX"
+          },
+          "thoroughfare": {
+            "value": "Bernstrasse",
+            "number": "45",
+            "technicalKey": "STREET"
+          },
+          "premise": {
+            "value": "Werk 1",
+            "technicalKey": "BUILDING"
+          },
+          "postalDeliveryPoint": {
+            "value": "Tor 1",
+            "technicalKey": "INTERURBAN_DELIVERY_POINT"
+          }
+        }
+      },
+      "manufacturingDate": "2000-01-31",
+      "manufacturer": {
+        "left": {
+          "contactProperty": {
+            "faxNumber": "+49 89 0987654321",
+            "website": "https://www.samsung.com",
+            "phoneNumber": "+49 89 1234567890",
+            "email": "test.mail@example.com"
+          },
+          "companyName": [
+            "RYtGKbgicZaHCBRQDSx"
+          ],
+          "address": {
+            "locality": {
+              "value": "Mannheim",
+              "technicalKey": "BLOCK"
+            },
+            "country": {
+              "shortName": ""
+            },
+            "postCode": {
+              "value": "98765-4321",
+              "technicalKey": "CEDEX"
+            },
+            "thoroughfare": {
+              "value": "Bernstrasse",
+              "number": "45",
+              "technicalKey": "STREET"
+            },
+            "premise": {
+              "value": "Werk 1",
+              "technicalKey": "BUILDING"
+            },
+            "postalDeliveryPoint": {
+              "value": "Tor 1",
+              "technicalKey": "INTERURBAN_DELIVERY_POINT"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 ## Business Architecture
 
 The Business Architecture illustrates the interaction between the EcoPass KIT and other KITs, components, data models, and artifacts used for identity and access management, illustrated by the Figure below.

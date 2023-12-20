@@ -3,6 +3,8 @@
 ## [in preparation]
 ## [2.0.0] - 2023-12-22
 
+### Added
+- Added `Digital Product Pass v3.0.0` aspect and explanations
 
 ## [released]
 ## [1.0.0] - 2023-12-15
