@@ -3,9 +3,6 @@
 ## [in preparation]
 ## [2.0.0] - 2023-12-22
 
-## Updated
-- Updated technical software development context diagram
-
 
 ## [released]
 ## [1.0.0] - 2023-12-15
