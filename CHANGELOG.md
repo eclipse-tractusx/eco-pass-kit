@@ -1,5 +1,11 @@
 # Changelog
 
+## [in preparation]
+## [2.0.0] - 2023-12-22
+
+### Updated
+- Updated battery pass model to latest version `v4.0.0`
+
 ## [released]
 ## [1.0.0] - 2023-12-15
 
