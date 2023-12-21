@@ -133,6 +133,8 @@ The following information is required for enabling the digital twin search, in o
 
 ## 4. Data Negotiation and Transfer Phase
 
+The **Data Negotiation and Transfer Phase** is the phase responsible for the final data transfer and negotiation. In this phase we retrieve the data using the EDC.
+
 
 ### Prerequisites
 
@@ -142,7 +144,8 @@ The following information is required for enabling the digital twin search, in o
 | ---- | ------- | ----------- |
 | Contract with Policy | [Contract Example](#contract-example) | To start the contract negotiation we need to agree on a policy for the a specific contract. This needs to be selected by the one that is requesting the data.
 
-
+### Sequence Diagram
+[![Negotiation and Transfer](./resources/development-view/ecoPassNegotiationAndTransferSequence.svg)](./resources/development-view/ecoPassNegotiationAndTransferSequence.svg)
 
 
 ## Authentication and Authorization
