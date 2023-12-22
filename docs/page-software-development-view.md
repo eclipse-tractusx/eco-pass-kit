@@ -169,7 +169,13 @@ For more information on how the Authentication & Authorization is done consult t
 
 ## API Specification
 
-#### Eco Pass APIs
+### Open API specification
+
+The Digital Product Pass / Eco Pass KIT Open API specification is available at the swagger hub from Tractus-X:
+
+[https://app.swaggerhub.com/apis/eclipse-tractusx-bot/digital-product-pass](https://app.swaggerhub.com/apis/eclipse-tractusx-bot/digital-product-pass)
+
+### Eco Pass APIs
 The APIs below are the ones contain in the `Digital Product Pass Backend` reference implementation. Which can be reused for retrieving aspects from the Catena-X Network.
 
  | API                                   | Method | Description                                                                                                                                                                                                                                                                                                                                                                    | Parameters                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
