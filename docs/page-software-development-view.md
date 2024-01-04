@@ -1,3 +1,27 @@
+<!--
+#################################################################################
+# Tractus-X - EcoPass KIT
+#
+# Copyright (c) 2022, 2024 Contributors to the Eclipse Foundation
+#
+# See the NOTICE file(s) distributed with this work for additional
+# information regarding copyright ownership.
+#
+# This program and the accompanying materials are made available under the
+# terms of the Apache License, Version 2.0 which is available at
+# https://www.apache.org/licenses/LICENSE-2.0.
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+# either express or implied. See the
+# License for the specific language govern in permissions and limitations
+# under the License.
+#
+# SPDX-License-Identifier: Apache-2.0
+##################################################################################
+-->
+
 ---
 title: Development View
 ---
@@ -325,7 +349,7 @@ The following represents a collection of relevant documentation regarding the pr
                           "1.1"
                       ],
                       "subprotocol": "DSP",
-                      "subprotocolBody": "id=urn:uuid:3e4a5957-f226-478a-ab18-79ced49d6195;dspEndpoint=<edc-url>",
+                      "subprotocolBody": "id=urn:uuid:3e4a5957-f226-478a-ab18-79ced49d6195;dspEndpoint=<edc-control-plane-url>",
                       "subprotocolBodyEncoding": "plain",
                       "securityAttributes": [
                           {
@@ -362,7 +386,7 @@ The following represents a collection of relevant documentation regarding the pr
                           "1.1"
                       ],
                       "subprotocol": "DSP",
-                      "subprotocolBody": "id=urn:uuid:3e4a5957-f226-478a-ab18-79ced49d6195;dspEndpoint=<edc-url>",
+                      "subprotocolBody": "id=urn:uuid:3e4a5957-f226-478a-ab18-79ced49d6195;dspEndpoint=<edc-control-plane-url>",
                       "subprotocolBodyEncoding": "plain",
                       "securityAttributes": [
                           {
@@ -440,14 +464,14 @@ The following represents a collection of relevant documentation regarding the pr
 This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
 
 - SPDX-License-Identifier: CC-BY-4.0
-- SPDX-FileCopyrightText: 2023,2023 ZF Friedrichshafen AG
-- SPDX-FileCopyrightText: 2023,2023 Robert Bosch GmbH
-- SPDX-FileCopyrightText: 2023,2023 Bayerische Motoren Werke Aktiengesellschaft (BMW AG)
-- SPDX-FileCopyrightText: 2023,2023 T-Systems International GmbH
-- SPDX-FileCopyrightText: 2023,2023 SAP SE
-- SPDX-FileCopyrightText: 2023,2023 CGI Deutschland B.V. & Co. KG
-- SPDX-FileCopyrightText: 2023,2023 Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. für ihre Institute IPK und IPK
-- SPDX-FileCopyrightText: 2023,2023 BASF SE
-- SPDX-FileCopyrightText: 2023,2023 Henkel AG & Co. KGaA
-- SPDX-FileCopyrightText: 2023,2023 Contributors to the Eclipse Foundation
-- Source URL: <https://github.com/eclipse-tractusx/eco-pass-kit>
+- SPDX-FileCopyrightText: 2023, 2024 ZF Friedrichshafen AG
+- SPDX-FileCopyrightText: 2023, 2024 Robert Bosch GmbH
+- SPDX-FileCopyrightText: 2023, 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG)
+- SPDX-FileCopyrightText: 2023, 2024 T-Systems International GmbH
+- SPDX-FileCopyrightText: 2023, 2024 SAP SE
+- SPDX-FileCopyrightText: 2023, 2024 CGI Deutschland B.V. & Co. KG
+- SPDX-FileCopyrightText: 2023, 2024 Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. für ihre Institute IPK und IPK
+- SPDX-FileCopyrightText: 2023, 2024 BASF SE
+- SPDX-FileCopyrightText: 2023, 2024 Henkel AG & Co. KGaA
+- SPDX-FileCopyrightText: 2023, 2024 Contributors to the Eclipse Foundation
+- Source URL: https://github.com/eclipse-tractusx/eco-pass-kit
