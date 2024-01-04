@@ -1,6 +1,6 @@
 <!-- 
 #################################################################################
-Tractus-X - Eco Pass KIT
+Tractus-X - EcoPass KIT
 
 Copyright (c) 2022, 2024 Contributors to the Eclipse Foundation
 
@@ -23,16 +23,16 @@ SPDX-License-Identifier: Apache-2.0
 ################################################################################## 
 -->
 
-![Eco Pass Kit Pictotogram](/docs/resources/img/EcoPassKIT_pictogram.png)
+![EcoPass Kit Pictotogram](/docs/resources/img/EcoPassKIT_pictogram.png)
 
-<h1 style="display:flex; align-items: center;">&nbsp;&nbsp;Eco Pass KIT</h1>
+<h1 style="display:flex; align-items: center;">&nbsp;&nbsp;EcoPass KIT</h1>
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Apache 2.0 License][license-shield]][license-url]
 [![Latest Release][release-shield]][release-url]
 
-This is the repository of the EcoPass Kit. In this repository we collect all the information needed to use the this KIT.
+This is the repository of the EcoPass KIT. In this repository we collect all the information needed to use the this KIT.
 
 The EcoPass KIT will be the key enabler for various stakeholders to use digital product passports, which represent a digital collection of specific information about a physical product in a standardized exchange format. This data is governed by agreed-upon ownership and access rights, which are conveyed through the Eclipse Data Space Connector (EDC). The primary purpose of the product pass is to enable the electronic registration, processing and sharing of product-related details among various entities in the supply chain, including several businesses and authorities. The demand for interoperable product passports exists worldwide, driven by the need to establish sustainable and transparent supply chains across different types of products, for which the adoption of standards will become crucial. In this context, Catena-X offers a decentralized ecosystem supported by standards and principles like data sovereignty, which can effectively implement such a product passport system. The objective of the EcoPass KIT is therefore to:
 
