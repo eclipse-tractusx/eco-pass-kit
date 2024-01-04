@@ -250,7 +250,7 @@ The semantic models are located [here](https://github.com/eclipse-tractusx/sldt-
 
 The Digital Product Passport establishes a set of data requirements for different product groups. The parameters will contribute to a more transparent and circular economy within the European Union. The detailed description is given in the Ecodesign for Sustainable Products Regulation Proposal ([ESPR](https://environment.ec.europa.eu/publications/proposal-ecodesign-sustainable-products-regulation_en)). From these regulations, content clusters for circularity were identified, and concrete circularity parameters for the Product Passport derived. The data sets also contain information, which are relevant for closed and open loop business models. It is important to note that the data model contains information / data fields, which are optional and mandatory for regulation fulfillment. It is also worth mentioning that sharing information within the network is based on decentralized technologies and is always based on the individual decision by each provider.
 
-The Digital Product Passport is the core model and can be used as the root class for other, specific, product models. The Passport itself is defined by the usage of Catena-X shared services, a standardized data model and an application which will enable stakeholders to access the relevant data. The first version of the Product Passport model consists out of the following information:
+The Digital Product Passport is the core model and can be used as the root class for other, specific, product models. The Passport itself is defined by the usage of Catena-X shared services, a standardized data model and an application which will enable stakeholders to access the relevant data. The first version of the Digital Product Passport model consists of the following information:
 
 - Passport Metadata
 - Product Identification
@@ -260,13 +260,13 @@ The Digital Product Passport is the core model and can be used as the root class
 - Commercial Information
 - Operational Information
 - Sources
-- Additional Data (An generic node structure that allow the representation of non-standardized data)
+- Additional Data (A generic node structure that allows the representation of non-standardized data)
 
 This data model is based on the new proposed Ecodesign Regulation ([ESPR-2022](https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/sustainable-products/ecodesign-sustainable-products_en)) from March 30th, 2022 and is continuously adapted to the basic conditions over time. Amendments to this regulation came from the Council of the European Union ([Council Amendment](https://data.consilium.europa.eu/doc/document/ST-9014-2023-INIT/en/pdf)) from May 15th, 2023 and the European Parliament ([Parliament Amendment](https://www.europarl.europa.eu/doceo/document/TA-9-2023-0272_EN.html)) from July 12th, 2023 and is shown at specific points in the model. However, the main basis remains the version from the Committee.
 
 #### Link to current model
 
-The semantic models are located [here](https://github.com/eclipse-tractusx/sldt-semantic-models/blob/main/io.catenax.generic.digital_product_passport/). For each version there is a separated directory containing the ttl-file and a generated samples. The latest version available is the `v3.0.0` which sets the bases of all the other abstractactions of the Digitial Product Pass at the moment like the `Battery Pass v4.0.0` that imports several aspects from the DPP Aspect.
+The semantic models are located [here](https://github.com/eclipse-tractusx/sldt-semantic-models/blob/main/io.catenax.generic.digital_product_passport/). For each version there is a separated directory containing the ttl-file and a generated sample. The latest version available is the `v3.0.0` which sets the base of all the other abstractactions of the Digital Product Pass at the moment like the `Battery Pass v4.0.0` that imports several aspects from the DPP Aspect.
 
 
 #### Example Payload
