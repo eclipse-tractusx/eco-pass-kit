@@ -1,26 +1,25 @@
-<!-- 
-
-Tractus-X - Eco Pass KIT
-
-Copyright (c) 2022, 2024 Contributors to the Eclipse Foundation
-
-See the NOTICE file(s) distributed with this work for additional
-Information regarding copyright ownership.
-
-This program and the accompanying materials are made available under the
-terms of the Apache License, Version 2.0 which is available at
-
-https://www.apache.org/licenses/LICENSE-2.0.
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
-either express or implied. See the
-License for the specific language govern in permissions and limitations
-under the License.
-
-SPDX-License-Identifier: Apache-2.0
-
+<!--
+#################################################################################
+# Tractus-X - EcoPass KIT
+#
+# Copyright (c) 2022, 2024 Contributors to the Eclipse Foundation
+#
+# See the NOTICE file(s) distributed with this work for additional
+# information regarding copyright ownership.
+#
+# This program and the accompanying materials are made available under the
+# terms of the Apache License, Version 2.0 which is available at
+# https://www.apache.org/licenses/LICENSE-2.0.
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+# either express or implied. See the
+# License for the specific language govern in permissions and limitations
+# under the License.
+#
+# SPDX-License-Identifier: Apache-2.0
+##################################################################################
 -->
 
 ---
@@ -55,6 +54,10 @@ Based on the information provided in this kit, it is possible to run and program
 # Configuration Guide
 
 In order to get the Digital Product Pass working, an EDC connector needs to be configured and assets need to be created so that the Application is able to perform the communications.
+
+> **_NOTE:_**
+*This documentation is based in the Digital Product Pass Admin Guide. For the complete information check the CX-0096-TriangleForDigitalProductPass Standard or the [Admin Guide](https://github.com/eclipse-tractusx/digital-product-pass/blob/main/docs/admin%20guide/Admin_Guide.md)*
+
 
 ## EDC Provider Configuration
 
