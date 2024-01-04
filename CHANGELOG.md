@@ -27,6 +27,19 @@
 ## [in preparation]
 ## [2.0.0] - 2023-12-22
 
+## Added
+- Data Retrieval Flow diagram added
+- Added description on how to retrieve data
+- Digital Twin Registry Search Sequence Diagram Added
+- Digital Twin Search Sequence Diagram Added
+- Data Retrieval Sequence Diagram Added
+- Added Backend API specification
+- Added authorization and authentication docs
+- Added technical prerequisites table
+
+## Updated
+- Updated diagram with API to search for digital twin registries
+- Updated licenses and header licenses
 
 ## [released]
 ## [1.0.0] - 2023-12-15
