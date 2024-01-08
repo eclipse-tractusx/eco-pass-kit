@@ -1,0 +1,38 @@
+name: Publish EcoPass Kit pdf
+
+on:
+  push:
+    branches: [ "main", "feature/publish-ecopass-pdf-workflow" ]
+
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "Branch to use"
+        required: true
+        default: 'main'
+        type: string
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Replace image paths
+        id: files_list
+        run: |
+          sed -i 's#/docs/resources#./docs/resources#g' ./docs/page-adoption-view.md ./docs/page-documentation.md ./docs/page-software-development-view.md ./docs/page-software-operation-view.md
+
+      - name: Generate Documentation.pdf from markdown files
+        uses: docker://pandoc/latex:2.9
+        with:
+          args: --output=./docs/Documentation.pdf ./docs/page-adoption-view.md ./docs/page-software-development-view.md ./docs/page-software-operation-view.md ./docs/page-documentation.md
+      
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: output
+          path: ./docs
