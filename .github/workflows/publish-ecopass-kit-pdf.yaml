@@ -32,7 +32,7 @@ jobs:
           args: --output=./docs/Documentation.pdf ./docs/page-adoption-view.md ./docs/page-software-development-view.md ./docs/page-software-operation-view.md ./docs/page-documentation.md
       
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Documentation.pdf
-          path: ./docs
+          path: ./docs/Documentation.pdf
