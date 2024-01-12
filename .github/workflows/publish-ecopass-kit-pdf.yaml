@@ -2,7 +2,7 @@ name: Publish EcoPass Kit pdf
 
 on:
   push:
-    branches: [ "main", "feature/publish-ecopass-pdf-workflow" ]
+    branches: [ "main", "feature/publish-kit-as-pdf" ]
 
     tags:
       - 'v[0-9]+.[0-9]+.[0-9]+'
