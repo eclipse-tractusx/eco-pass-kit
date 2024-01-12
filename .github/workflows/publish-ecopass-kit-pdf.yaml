@@ -51,7 +51,7 @@ jobs:
       - name: Generate Documentation.pdf from markdown files
         uses: docker://pandoc/latex:2.9
         with:
-          args: --output=./docs/Documentation.pdf ./docs/page-documentation.md ./docs/success-stories/BatteryPass_Viewer_App.md  ./docs/page-software-operation-view.md ./docs/page-software-development-view.md ./docs/page-adoption-view.md ./README.md
+          args: --output=./docs/Documentation.pdf  ./README.md ./docs/page-adoption-view.md ./docs/page-software-development-view.md  ./docs/page-software-operation-view.md  ./docs/success-stories/BatteryPass_Viewer_App.md ./docs/page-documentation.md
       
       - name: Upload artifact
         uses: actions/upload-artifact@v4
