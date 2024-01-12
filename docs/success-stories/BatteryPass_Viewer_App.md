@@ -74,13 +74,13 @@ Here is a video presenting the Battery Pass Application. It was displayed at the
 
 ## Reference Implementation
 
-![Digital Product Pass](image.png)
+![Digital Product Pass](./DigitalProductPass_DEMO_View1_Module.png)
 
 
 The Battery Pass Viewer App is now available with extended options for Digital Product Passports and Transmission Passports. This are the other functionalities the [Digital Product Pass](https://github.com/eclipse-tractusx/digital-product-pass/) application has:
 
 - Drill Down in Components of the Passports using the Item Relationship Service.
-![Drill Down Components](DigitalProductPass_DEMO_View2_Components_Module.png)
+![Drill Down Components](./DigitalProductPass_DEMO_View2_Components_Module.png)
 - Retrieve any Aspects from Catena-X through Eclipse DataSpace Connectors in the DPP Backend Reference implementation.
 - Visualize additional product data in the Digital Product Pass Aspects.
 
