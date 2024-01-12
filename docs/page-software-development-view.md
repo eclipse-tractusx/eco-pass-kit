@@ -13,7 +13,8 @@ Thereby, this KIT covers various aspects, starting from how the available API En
 
 The following Figure 7 shows how the EcoPass KIT (represented by Product Passport Frontend and Backend) is embedded in the overall architecture.
 
-![EcoPassKIT IT Arch Picture](/docs/resources/development-view/adoption-view-EcoPassKIT_IT_Arch.png)
+![EcoPassKIT IT Arch Picture](./docs/resources/development-view/adoption-view-EcoPassKIT_IT_Arch.png)
+
 
 After authorization, the sequence diagram below (Figure 8) illustrates the identification process of the decentral Digital Twin Registry. The process is divided into 25 steps, starting within the Data Consumer Environment, which is providing the digital product passport consumer application/service. In summary, the sequence details the interaction of EDC(s), corresponding BPN(s), and the decentral Digital Twin Registry (dDTR). It also illustrates how the consumer not only requests data via the EDC(s), but also how the data is exchanged via the provider, thereby leveraging the EDC component at all stages. The sequence is concluded by data requests for digital twins and corresponding sub models.
 
