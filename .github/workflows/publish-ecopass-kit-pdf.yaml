@@ -24,7 +24,7 @@ name: Publish EcoPass Kit pdf
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "feature/publish-kit-as-pdf" ]
 
     tags:
       - 'v[0-9]+.[0-9]+.[0-9]+'
@@ -42,6 +42,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Replace media paths
+        run: |
+          sed -i 's#./resources#./docs/resources#g' ./docs/page-adoption-view.md ./docs/page-documentation.md ./docs/page-software-development-view.md ./docs/page-software-operation-view.md
+          sed -i 's#./#./docs/success-stories/#g' ./docs/success-stories/BatteryPass_Viewer_App.md
 
       - name: Generate Documentation.pdf from markdown files
         uses: docker://pandoc/latex:2.9
