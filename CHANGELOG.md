@@ -3,6 +3,12 @@
 ## [in preparation]
 ## [2.0.0] - 2023-12-22
 
+## Updated
+- Updated business architecture diagram
+
+## Issues Fixed
+- Corrected links paths to absolute path
+
 
 ## [released]
 ## [1.0.0] - 2023-12-15
