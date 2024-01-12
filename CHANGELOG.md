@@ -1,16 +1,46 @@
+<!-- 
+#################################################################################
+Tractus-X - EcoPass KIT
+
+Copyright (c) 2022, 2024 Contributors to the Eclipse Foundation
+
+See the NOTICE file(s) distributed with this work for additional
+Information regarding copyright ownership.
+
+This program and the accompanying materials are made available under the
+terms of the Apache License, Version 2.0 which is available at
+
+https://www.apache.org/licenses/LICENSE-2.0.
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+either express or implied. See the
+License for the specific language govern in permissions and limitations
+under the License.
+
+SPDX-License-Identifier: Apache-2.0
+################################################################################## 
+-->
+
+
 # Changelog
 
-## [in preparation]
-## [2.0.0] - 2023-12-22
+## [released]
+## [2.0.0] - 2024-01-12
 
-
-### Added
+## Added 
+- Added EcoPass KIT Logo
+- Added the operation guide based on the Digital Product Pass Admin Guide
+- Added new Software Architecture guide with descriptive documentation 
 - Added `Digital Product Pass v3.0.0` aspect and explanations
+- Added Battery Pass Success Story
 
 ### Updated
 - Updated battery pass model to latest version `v4.0.0`
 - Updated business architecture diagram
-
+- Updated readme in open source repository
+  
 ## Issues Fixed
 - Corrected links paths to absolute path
 

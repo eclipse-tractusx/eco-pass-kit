@@ -1,6 +1,33 @@
+<!-- 
+#################################################################################
+Tractus-X - EcoPass KIT
+
+Copyright (c) 2022, 2024 Contributors to the Eclipse Foundation
+
+See the NOTICE file(s) distributed with this work for additional
+Information regarding copyright ownership.
+
+This program and the accompanying materials are made available under the
+terms of the Apache License, Version 2.0 which is available at
+
+https://www.apache.org/licenses/LICENSE-2.0.
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+either express or implied. See the
+License for the specific language govern in permissions and limitations
+under the License.
+
+SPDX-License-Identifier: Apache-2.0
+################################################################################## 
+-->
+
 ---
 title: Adoption View
 ---
+
+![EcoPass KIT Pictotogram](./resources/img/EcoPassKIT_pictogram.png)
 
 ## Introduction
 
@@ -57,7 +84,7 @@ Embracing a digital product pass can address these challenges, enabling transpar
 
 Stakeholders along the value chain, as well as solution providers can reap the benefits of utilizing KITs in their organization. The Figure below shows an overview of these benefits, further explanation can be found below the illustration.
 
-![ValueChain Benefits](/docs/resources/adoption-view/adoption-view-ValueChainBenefits.png)
+![ValueChain Benefits](./resources/adoption-view/adoption-view-ValueChainBenefits.png)
 
 **Value Chain Partners** can benefit from the EcoPass KIT especially by bringing the product transparency to a next level which will allow for several areas to increase the company’s value. Multiple risks (e.g. regulatory compliance) can be mitigated, cost and process efficiency may be improved, the strategic knowledge about products increases and the possibility for new business is being established.
 
@@ -1593,13 +1620,14 @@ Data sovereignty is enabled by so-called verifiable credentials. These rely on t
 This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
 
 - SPDX-License-Identifier: CC-BY-4.0
-- SPDX-FileCopyrightText: 2023,2023 ZF Friedrichshafen AG
-- SPDX-FileCopyrightText: 2023,2023 Robert Bosch GmbH
-- SPDX-FileCopyrightText: 2023,2023 Bayerische Motoren Werke Aktiengesellschaft (BMW AG)
-- SPDX-FileCopyrightText: 2023,2023 T-Systems International GmbH
-- SPDX-FileCopyrightText: 2023,2023 SAP SE
-- SPDX-FileCopyrightText: 2023,2023 Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. für ihre Institute IPK und IPK
-- SPDX-FileCopyrightText: 2023,2023 BASF SE
-- SPDX-FileCopyrightText: 2023,2023 Henkel AG & Co. KGaA
-- SPDX-FileCopyrightText: 2023,2023 Contributors to the Eclipse Foundation
-- Source URL: <https://github.com/eclipse-tractusx/eco-pass-kit>
+- SPDX-FileCopyrightText: 2023, 2024 ZF Friedrichshafen AG
+- SPDX-FileCopyrightText: 2023, 2024 Robert Bosch GmbH
+- SPDX-FileCopyrightText: 2023, 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG)
+- SPDX-FileCopyrightText: 2023, 2024 T-Systems International GmbH
+- SPDX-FileCopyrightText: 2023, 2024 SAP SE
+- SPDX-FileCopyrightText: 2023, 2024 CGI Deutschland B.V. & Co. KG
+- SPDX-FileCopyrightText: 2023, 2024 Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. für ihre Institute IPK und IPK
+- SPDX-FileCopyrightText: 2023, 2024 BASF SE
+- SPDX-FileCopyrightText: 2023, 2024 Henkel AG & Co. KGaA
+- SPDX-FileCopyrightText: 2023, 2024 Contributors to the Eclipse Foundation
+- Source URL: https://github.com/eclipse-tractusx/eco-pass-kit
