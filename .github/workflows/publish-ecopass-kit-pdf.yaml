@@ -21,8 +21,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - name: Replace image paths
-        id: files_list
+      - name: Replace paths
         run: |
           sed -i 's#/docs/resources#./docs/resources#g' ./docs/page-adoption-view.md ./docs/page-documentation.md ./docs/page-software-development-view.md ./docs/page-software-operation-view.md
 
@@ -34,5 +33,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Documentation.pdf
+          name: ecopass-kit
           path: ./docs/Documentation.pdf
