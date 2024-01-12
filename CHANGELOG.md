@@ -5,6 +5,8 @@
 
 ## Added 
 - Added EcoPass KIT Logo
+- Added the operation guide based on the Digital Product Pass Admin Guide
+- Added new Software Architecture guide
 
 
 ## [released]
