@@ -13,13 +13,17 @@ Thereby, this KIT covers various aspects, starting from how the available API En
 
 The following Figure shows how the EcoPass KIT (represented by Digital Product Passport Frontend and Backend) is embedded in the overall architecture.
 
-![EcoPassKIT IT Arch Picture](./resources/development-view/adoption-view-EcoPassKIT_IT_Arch.png)
+![EcoPassKIT IT Arch Picture](./resources/development-view/ecoPassContext.svg)
+
 
 
 ## Data Retrieval Flow
 In order to achieve a better understanding of the Eco Pass KIT data retrieval flow, we can detail a specific example where an user wants to retrieve an specific passport for a asset in Catena-X using the Eco Pass KIT (reference implementation [`digital-product-pass`](https://github.com/eclipse-tractusx/digital-product-pass)).
 
 In the data retrieval flow example below we will imagine that an user wants to retrieve the data related to a Catena-X Digital Product Pass ID he has in his product as form of QR Code and ID:
+
+![Sequence Diagramm](./resources/development-view/developmentview-sequence-diagramm.svg)
+
 
 | ID  | CX:XYZ78901:IMR18650V1 |
 | --- | ---------------------- |

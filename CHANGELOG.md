@@ -4,6 +4,16 @@
 ## [2.0.0] - 2023-12-22
 
 
+### Added
+- Added `Digital Product Pass v3.0.0` aspect and explanations
+
+### Updated
+- Updated battery pass model to latest version `v4.0.0`
+- Updated business architecture diagram
+
+## Issues Fixed
+- Corrected links paths to absolute path
+
 ## [released]
 ## [1.0.0] - 2023-12-15
 
