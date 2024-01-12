@@ -1,0 +1,60 @@
+#################################################################################
+# Tractus-X - EcoPass KIT
+#
+# Copyright (c) 2022, 2024 Contributors to the Eclipse Foundation
+#
+# See the NOTICE file(s) distributed with this work for additional
+# information regarding copyright ownership.
+#
+# This program and the accompanying materials are made available under the
+# terms of the Apache License, Version 2.0 which is available at
+# https://www.apache.org/licenses/LICENSE-2.0.
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+# either express or implied. See the
+# License for the specific language govern in permissions and limitations
+# under the License.
+#
+# SPDX-License-Identifier: Apache-2.0
+##################################################################################
+
+name: Publish EcoPass Kit pdf
+
+on:
+  push:
+    branches: [ "main" ]
+
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "Branch to use"
+        required: true
+        default: 'main'
+        type: string
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Replace media paths
+        run: |
+          sed -i 's#/docs/resources#./resources#g' ./docs/page-adoption-view.md ./docs/page-documentation.md ./docs/page-software-development-view.md ./docs/page-software-operation-view.md
+          sed -i 's#./#./docs/success-stories/#g' ./docs/success-stories/BatteryPass_Viewer_App.md
+
+      - name: Generate Documentation.pdf from markdown files
+        uses: docker://pandoc/latex:2.9
+        with:
+          args: --output=./docs/Documentation.pdf ./docs/page-adoption-view.md ./docs/page-software-development-view.md ./docs/page-software-operation-view.md ./docs/page-documentation.md ./docs/success-stories/BatteryPass_Viewer_App.md
+      
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ecopass-kit
+          path: ./docs/Documentation.pdf
