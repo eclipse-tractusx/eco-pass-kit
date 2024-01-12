@@ -42,10 +42,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Replace media paths
         run: |
-          sed -i 's#/docs/resources#./resources#g' ./docs/page-adoption-view.md ./docs/page-documentation.md ./docs/page-software-development-view.md ./docs/page-software-operation-view.md
+          sed -i 's#./resources#./docs/resources#g' ./docs/page-adoption-view.md ./docs/page-documentation.md ./docs/page-software-development-view.md ./docs/page-software-operation-view.md
           sed -i 's#./#./docs/success-stories/#g' ./docs/success-stories/BatteryPass_Viewer_App.md
 
       - name: Generate Documentation.pdf from markdown files
