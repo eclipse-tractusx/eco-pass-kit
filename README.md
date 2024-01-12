@@ -23,7 +23,7 @@ SPDX-License-Identifier: Apache-2.0
 ################################################################################## 
 -->
 
-![EcoPass Kit Pictotogram](/docs/resources/img/EcoPassKIT_pictogram.png)
+![EcoPass Kit Pictotogram](./docs/resources/img/EcoPassKIT_pictogram.png)
 
 <h1 style="display:flex; align-items: center;">&nbsp;&nbsp;EcoPass KIT</h1>
 
