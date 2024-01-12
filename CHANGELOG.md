@@ -3,8 +3,11 @@
 ## [in preparation]
 ## [2.0.0] - 2023-12-22
 
-### Added
+## Added 
+- Added EcoPass KIT Logo
 - Added the operation guide based on the Digital Product Pass Admin Guide
+- Added new Software Architecture guide
+
 
 ## [released]
 ## [1.0.0] - 2023-12-15
