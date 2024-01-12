@@ -4,7 +4,10 @@
 ## [2.0.0] - 2023-12-22
 
 ## Updated
-- Updated technical software development context diagram
+- Updated business architecture diagram
+
+## Issues Fixed
+- Corrected links paths to absolute path
 
 
 ## [released]
